@@ -1,0 +1,25 @@
+{
+    "debug": false,
+    "lintScripts": false,
+    "preprocessorLocations": [
+        "assets"
+    ],
+    "preprocessorScriptOutput": "assets/scripts",
+    "preprocessorStyleOutput": "assets/css",
+    "projectName": "ARK Resource Calculator",
+    "projectDescription": "A simple app to calculate how much of each resource is needed for mass crafting in ARK: Survival Evolved.",
+    "publishedId": null,
+    "serverHostname": null,
+    "serverPort": null,
+    "templateDirectory": "templates",
+    "templateDefaultLayout": "layout",
+    "templateDefaultPage": "index",
+    "type": "mixture",
+    "useCompass": false,
+    "simpleModePartnerServer": null,
+    "modelSource": null,
+    "domain": null,
+    "convertHtml": {
+        "relativePaths": false
+    }
+}
