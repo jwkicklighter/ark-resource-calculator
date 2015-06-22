@@ -1,0 +1,18 @@
+{
+	"title": "Wooden Roof",
+	"modelDate": "06.21.2015",
+	"materials": [
+		{
+			"name": "wood",
+			"quantity": 60
+		},
+		{
+			"name": "thatch",
+			"quantity": 15
+		},
+		{
+			"name": "fiber",
+			"quantity": 10
+		}
+	]
+}

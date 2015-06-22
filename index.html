@@ -5,24 +5,54 @@
         <title>Empty</title>
         <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
         <!-- Styles -->
-        <link href="app.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/assets/css/main.css" rel="stylesheet" type="text/css" media="all" />
         <!-- Style block allowing child pages to inject their own styles -->
         
     </head>
-    <body>
+    <body class="blue darken-4">
         <div id="wrapper">
             <!-- Include -->
-            <header>
+            <!-- <header>
 	<h1>Empty</h1>
-</header>
+</header> -->
             <!-- Content block, child page inject content -->
-             
-	<p>An empty, simple boilerplate for a fresh start.</p>     
-	<!-- TODO: Create my project :-) -->
+            
+	<div class="row col">
+			<form class="card-panel col s8 offset-s2" action="" method="">
+			<div class="row">
+				<h3 class="center">Crafting Calculator</h3>
+			</div>
+			<div class="row col s12">
+				<div id="formRows">
+				</div>
+				<div class="row center">
+					<div class="btn waves-effect waves-light" name="calculate" id="addRowBtn">Add Row</div>
+					<div class="btn waves-effect waves-light" name="calculate" id="calculateBtn">Calculate!</div>
+				</div>
+			</div>
+		</form>
+		<div class="card-panel col s8 offset-s2">
+			<h5 class="center">Materials Needed</h5>
+			<table class="col s10 offset-s1 row striped responsive-table">
+				<thead>
+					<tr>
+						<th data-field="name">Name</th>
+						<th data-field="quantity">Quantity</th>
+					</tr>
+				</thead>
+				<tbody id="output">
+				</tbody>
+			</table>
+		</div>
+	</div>
 
         </div>
         <!-- Script block allowing child pages to inject their own scripts -->
+        <script src="//cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+        <script src="//cdn.jsdelivr.net/lodash/3.9.3/lodash.min.js"></script>
         
-        <script src="app.js"></script>
+<script src="/assets/scripts/index.min.js"></script>
+
+        <script src="/assets/scripts/materialize.min.js"></script>
     </body>
 </html>

@@ -1,0 +1,18 @@
+{
+	"title": "Wooden Wall",
+	"modelDate": "06.21.2015",
+	"materials": [
+		{
+			"name": "wood",
+			"quantity": 40
+		},
+		{
+			"name": "thatch",
+			"quantity": 10
+		},
+		{
+			"name": "fiber",
+			"quantity": 7
+		}
+	]
+}
