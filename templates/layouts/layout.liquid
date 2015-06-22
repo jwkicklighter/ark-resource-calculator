@@ -9,15 +9,17 @@
         <!-- Style block allowing child pages to inject their own styles -->
         {% block styles %}{% endblock %}
     </head>
-    <body>
+    <body class="blue darken-4">
         <div id="wrapper">
             <!-- Include -->
-            {% include "header" %}
+            <!-- {% include "header" %} -->
             <!-- Content block, child page inject content -->
             {% block content %}{% endblock %}
         </div>
         <!-- Script block allowing child pages to inject their own scripts -->
+        <script src="//cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+        <script src="//cdn.jsdelivr.net/lodash/3.9.3/lodash.min.js"></script>
         {% block scripts %}{% endblock %}
-        {{ "app.js" | asset_url | script_tag }}
+        {{ "assets/scripts/materialize.min.js" | asset_url | script_tag }}
     </body>
 </html>

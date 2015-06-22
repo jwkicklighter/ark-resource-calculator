@@ -1,4 +1,36 @@
-{% block content %} 
-	<p>An empty, simple boilerplate for a fresh start.</p>     
-	<!-- TODO: Create my project :-) -->
+{% block content %}
+	<div class="row col">
+			<form class="card-panel col s8 offset-s2" action="" method="">
+			<div class="row">
+				<h3 class="center">Crafting Calculator</h3>
+			</div>
+			<div class="row col s12">
+				<div id="formRows">
+				</div>
+				<div class="row center">
+					<div class="btn waves-effect waves-light" name="calculate" id="addRowBtn">Add Row</div>
+					<div class="btn waves-effect waves-light" name="calculate" id="calculateBtn">Calculate!</div>
+				</div>
+			</div>
+		</form>
+
+		<div class="card-panel col s8 offset-s2">
+			<h5 class="center">Materials Needed</h5>
+
+			<table class="col s10 offset-s1 row striped responsive-table">
+				<thead>
+					<tr>
+						<th data-field="name">Name</th>
+						<th data-field="quantity">Quantity</th>
+					</tr>
+				</thead>
+				<tbody id="output">
+				</tbody>
+			</table>
+		</div>
+	</div>
+{% endblock %}
+
+{% block scripts %}
+{{ "assets/scripts/index.min.js" | asset_url | script_tag }}
 {% endblock %}

@@ -1,0 +1,18 @@
+@import 'materialize';
+
+#formRows .row:first-child {
+  @extend .s12;
+  @extend .offset-s1;
+
+  .removeBtn {
+    @extend .hide;
+  }
+}
+
+#formRows .row {
+  @extend .s12;
+}
+
+.dropdown-content {
+  z-index: 50;
+}
