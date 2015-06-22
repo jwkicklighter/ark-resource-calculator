@@ -2,7 +2,8 @@
     "debug": false,
     "lintScripts": false,
     "preprocessorLocations": [
-        "assets"
+        "assets/scss",
+        "assets/scripts"
     ],
     "preprocessorScriptOutput": "assets/scripts",
     "preprocessorStyleOutput": "assets/css",
