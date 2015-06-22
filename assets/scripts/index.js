@@ -11,7 +11,7 @@ var craftingObjects = {
 };
 
 function getCraftingObject(modelName) {
-	var base = "../models/";
+	var base = "models/";
 	$.getJSON(base + modelName + ".json", function(json) {
 		craftingObjects[modelName] = json;
 	});
@@ -29,7 +29,7 @@ function addRow() {
 								'<div class="btn-flat btn-large waves-effect col s1 removeBtn" onClick="removeRow(' + currentRow + ')">' +
 								'<i class="mdi-action-delete"></i>' +
 								'</div>' +
-								'<div class="input-field col s3">' +
+								'<div class="input-field col s4">' +
 									'<select id="item-' + currentRow + '">' +
                     '<option value="ladder">Ladder</option>' +
 										'<option value="woodFoundation">Wooden Foundation</option>' +
@@ -43,7 +43,7 @@ function addRow() {
 									'<input type="text" id="quantity-' + currentRow + '" value="1" class="">' +
 									'<label for="quantity" class="active">Quantity</label>' +
 								'</div>' +
-                // '<div class="col s6">' +
+                // '<div class="col s5">' +
                 //   '<p class="range-field">' +
                 //     '<input type="range" id="quantity-' + currentRow + '" min="0" max="500" value="1" />' +
                 //   '</p>' +
