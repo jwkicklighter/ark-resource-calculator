@@ -32,5 +32,10 @@
 {% endblock %}
 
 {% block scripts %}
-{{ "assets/scripts/index.min.js" | asset_url | script_tag }}
+	{{ "assets/scripts/index.min.js" | script_tag }}
+	<script>
+		$('document').ready(function() {
+			addRow();
+		});
+	</script>
 {% endblock %}

@@ -5,7 +5,7 @@
         <title>{% block title %}Empty{% endblock %}</title>
         <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
         <!-- Styles -->
-        {{ "assets/css/main.css" | asset_url | stylesheet_tag }}
+        {{ "assets/css/main.css" | stylesheet_tag }}
         <!-- Style block allowing child pages to inject their own styles -->
         {% block styles %}{% endblock %}
     </head>
@@ -20,6 +20,6 @@
         <script src="//cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
         <script src="//cdn.jsdelivr.net/lodash/3.9.3/lodash.min.js"></script>
         {% block scripts %}{% endblock %}
-        {{ "assets/scripts/materialize.min.js" | asset_url | script_tag }}
+        {{ "assets/scripts/materialize.min.js" | script_tag }}
     </body>
 </html>
