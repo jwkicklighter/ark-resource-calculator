@@ -2510,7 +2510,7 @@ span.badge {
 /*******************
   Utility Classes
 *******************/
-.hide, #formRows .row:first-child .removeBtn {
+.hide {
   display: none !important; }
 
 .left-align {
@@ -4868,7 +4868,7 @@ span.badge {
     .row .col.s12, .row #formRows .col.row, #formRows .row .col.row {
       width: 100%;
       margin-left: 0; }
-    .row .col.offset-s1, .row #formRows .col.row:first-child, #formRows .row .col.row:first-child {
+    .row .col.offset-s1 {
       margin-left: 8.33333%; }
     .row .col.offset-s2 {
       margin-left: 16.66667%; }
