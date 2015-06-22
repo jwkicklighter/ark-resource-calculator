@@ -3,11 +3,96 @@ var currentRow = 0;
 rows = {};
 
 var craftingObjects = {
-  'ladder': {},
-	'woodFoundation': {},
-  'woodRamp': {},
-  'woodRoof': {},
-  'woodWall': {}
+  'ladder': {
+  	"title": "Wooden Ladder",
+  	"modelDate": "06.21.2015",
+  	"materials": [
+  		{
+  			"name": "wood",
+  			"quantity": 4
+  		},
+  		{
+  			"name": "thatch",
+  			"quantity": 7
+  		},
+  		{
+  			"name": "fiber",
+  			"quantity": 4
+  		}
+  	]
+  },
+	'woodFoundation': {
+  	"title": "Wooden Foundation",
+  	"modelDate": "06.21.2015",
+  	"materials": [
+  		{
+  			"name": "wood",
+  			"quantity": 80
+  		},
+  		{
+  			"name": "thatch",
+  			"quantity": 20
+  		},
+  		{
+  			"name": "fiber",
+  			"quantity": 15
+  		}
+  	]
+  },
+  'woodRamp': {
+  	"title": "Wooden Ramp",
+  	"modelDate": "06.21.2015",
+  	"materials": [
+  		{
+  			"name": "wood",
+  			"quantity": 60
+  		},
+  		{
+  			"name": "thatch",
+  			"quantity": 15
+  		},
+  		{
+  			"name": "fiber",
+  			"quantity": 10
+  		}
+  	]
+  },
+  'woodRoof': {
+  	"title": "Wooden Roof",
+  	"modelDate": "06.21.2015",
+  	"materials": [
+  		{
+  			"name": "wood",
+  			"quantity": 60
+  		},
+  		{
+  			"name": "thatch",
+  			"quantity": 15
+  		},
+  		{
+  			"name": "fiber",
+  			"quantity": 10
+  		}
+  	]
+  },
+  'woodWall': {
+  	"title": "Wooden Wall",
+  	"modelDate": "06.21.2015",
+  	"materials": [
+  		{
+  			"name": "wood",
+  			"quantity": 40
+  		},
+  		{
+  			"name": "thatch",
+  			"quantity": 10
+  		},
+  		{
+  			"name": "fiber",
+  			"quantity": 7
+  		}
+  	]
+  }
 };
 
 function getCraftingObject(modelName) {
@@ -17,9 +102,9 @@ function getCraftingObject(modelName) {
 	});
 }
 
-_.each(craftingObjects, function(n, modelName) {
-	getCraftingObject(modelName);
-});
+// _.each(craftingObjects, function(n, modelName) {
+// 	getCraftingObject(modelName);
+// });
 
 function addRow() {
 	console.log('addRow()');
