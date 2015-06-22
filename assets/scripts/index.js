@@ -29,7 +29,7 @@ function addRow() {
 								'<div class="btn-flat btn-large waves-effect col s1 removeBtn" onClick="removeRow(' + currentRow + ')">' +
 								'<i class="mdi-action-delete"></i>' +
 								'</div>' +
-								'<div class="input-field col s5">' +
+								'<div class="input-field col s3">' +
 									'<select id="item-' + currentRow + '">' +
                     '<option value="ladder">Ladder</option>' +
 										'<option value="woodFoundation">Wooden Foundation</option>' +
@@ -39,10 +39,15 @@ function addRow() {
 									'</select>' +
 									'<label>Crafting Item</label>' +
 								'</div>' +
-								'<div class="input-field col s5">' +
-									'<input type="text" id="quantity-' + currentRow + '" value="" class="">' +
-									'<label for="quantity">Quantity</label>' +
+								'<div class="input-field col s1">' +
+									'<input type="text" id="quantity-' + currentRow + '" value="1" class="">' +
+									'<label for="quantity" class="active">Quantity</label>' +
 								'</div>' +
+                // '<div class="col s6">' +
+                //   '<p class="range-field">' +
+                //     '<input type="range" id="quantity-' + currentRow + '" min="0" max="500" value="1" />' +
+                //   '</p>' +
+                // '</div>' +
 							'</div>';
 
 	$('#formRows').append(html);
