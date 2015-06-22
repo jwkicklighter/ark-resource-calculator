@@ -3,7 +3,11 @@ var currentRow = 0;
 rows = {};
 
 var craftingObjects = {
-	'woodFoundation': {}
+  'ladder': {},
+	'woodFoundation': {},
+  'woodRamp': {},
+  'woodRoof': {},
+  'woodWall': {}
 };
 
 function getCraftingObject(modelName) {
@@ -27,7 +31,11 @@ function addRow() {
 								'</div>' +
 								'<div class="input-field col s5">' +
 									'<select id="item-' + currentRow + '">' +
+                    '<option value="ladder">Ladder</option>' +
 										'<option value="woodFoundation">Wooden Foundation</option>' +
+                    '<option value="woodRamp">Wooden Ramp</option>' +
+                    '<option value="woodRoof">Wooden Roof</option>' +
+                    '<option value="woodWall">Wooden Wall</option>' +
 									'</select>' +
 									'<label>Crafting Item</label>' +
 								'</div>' +
