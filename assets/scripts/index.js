@@ -147,8 +147,6 @@ function removeRow(row) {
 	$('#inputRow-' + row).remove();
 }
 
-addRow();
-
 function clearCalculation() {
 	itemTotals = {};
 }
